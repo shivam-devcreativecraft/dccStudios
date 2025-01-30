@@ -1,0 +1,75 @@
+.process {
+  padding: 100px 0;
+  background-color: var(--primary-color);
+}
+
+.process-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  
+  h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    
+    .highlight {
+      color: var(--accent-color);
+    }
+  }
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.step {
+  text-align: left;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  position: relative;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.08);
+  }
+  
+  .step-number {
+    width: 40px;
+    height: 40px;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    color: var(--secondary-text);
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+.cta {
+  text-align: center;
+  margin-top: 4rem;
+  
+  .start-project-btn {
+    font-size: 1.2rem;
+    padding: 1rem 2.5rem;
+  }
+}

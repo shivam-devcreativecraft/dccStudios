@@ -1,0 +1,22 @@
+<nav class="navbar" [class.scrolled]="isScrolled">
+  <div class="container">
+    <div class="logo">
+      <a routerLink="/">
+        <img src="assets/d2.png" alt="DCC Studio">
+      </a>
+    </div>
+    
+    <div class="nav-links" [class.active]="isMobileMenuOpen">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+      <a routerLink="/about" routerLinkActive="active">About</a>
+      <a routerLink="/projects" routerLinkActive="active">Projects</a>
+      <a routerLink="/contact" routerLinkActive="active">Contact</a>
+    </div>
+    
+    <button class="start-project-btn" routerLink="/contact">Start a Project</button>
+    
+    <button class="mobile-menu-btn" (click)="toggleMobileMenu()">
+      <span [class.active]="isMobileMenuOpen"></span>
+    </button>
+  </div>
+</nav>

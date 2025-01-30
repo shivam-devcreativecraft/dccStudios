@@ -1,0 +1,202 @@
+<section class="projects-section">
+  <div class="container">
+    <h2 class="section-title">Our Projects</h2>
+    <p class="section-subtitle">Discover our latest work and creative solutions</p>
+
+    <!-- First Row - Left to Right -->
+    <h3>Posters</h3>
+    <div class="project-row">
+      <div class="carousel-container left-to-right">
+        <div class="carousel-track">
+          <div class="project-card" *ngFor="let project of projectsRow1">
+            <img [src]="project.image" [alt]="project.title">
+            <div class="project-info">
+              <h3>{{project.title}}</h3>
+              <p>{{project.category}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <!-- Second Row - Right to Left -->
+        <h3>Banners</h3>
+        <div class="project-row">
+          <div class="carousel-container right-to-left">
+            <div class="carousel-track">
+              <div class="project-card" *ngFor="let project of projectsRow2">
+                <img [src]="project.image" [alt]="project.title">
+                <div class="project-info">
+                  <h3>{{project.title}}</h3>
+                  <p>{{project.category}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+
+
+    <!-- Featured Projects Section -->
+    <div class="featured-projects">
+      <h2 class="section-title text-start">Website Apps</h2>
+      <div class="row">
+        <div class="col-12">
+          <!-- <h3 class="project-heading">E-commerce Platform</h3> -->
+          <div class="featured-project large">
+            <img src="assets/featured/gameHub.webp" alt="E-commerce Platform">
+            <div class="featured-overlay">
+              <div class="featured-content">
+                <!-- <span class="category">Web Development</span> -->
+                <h3>E-commerce Platform</h3>
+                <p>A fully responsive e-commerce solution with modern UI/UX</p>
+                <a href="https://gamehubdcc.pages.dev" target="_blank" rel="noopener noreferrer" class="view-project">View Project <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-12">
+          <!-- <h3 class="project-heading">Mobile App Design</h3> -->
+          <div class="featured-project">
+            <img src="assets/featured/portfoliotracker.webp" alt="Mobile App Design">
+            <div class="featured-overlay">
+              <div class="featured-content">
+                <!-- <span class="category">UI/UX Design</span> -->
+                <h3>Mobile App Design</h3>
+                <p>Modern mobile application interface design</p>
+                <a href="https://portfoliotrackerdcc.pages.dev" target="_blank" rel="noopener noreferrer" class="view-project">View Project <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-12">
+          <!-- <h3 class="project-heading">Brand Identity</h3> -->
+          <div class="featured-project">
+            <img src="assets/featured/fitness.webp" alt="Brand Identity">
+            <div class="featured-overlay">
+              <div class="featured-content">
+                <!-- <span class="category">Branding</span> -->
+                <h3>Brand Identity</h3>
+                <p>Complete brand identity design system</p>
+                <a href="https://shivfitness.pages.dev" target="_blank" rel="noopener noreferrer" class="view-project">View Project <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Third Row - Left to Right -->
+    <h3>Branding</h3>
+    <div class="project-row">
+      <div class="carousel-container left-to-right">
+        <div class="carousel-track">
+          <div class="project-card" *ngFor="let project of projectsRow3">
+            <img [src]="project.image" [alt]="project.title">
+            <div class="project-info">
+              <h3>{{project.title}}</h3>
+              <p>{{project.category}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Project Categories -->
+    <div class="project-categories">
+      <h2 class="section-title">Explore by Category</h2>
+      <div class="categories-grid">
+        <div class="category-card">
+          <div class="category-icon">
+            <i class="fas fa-desktop"></i>
+          </div>
+          <h3>Web Design</h3>
+          <p>20+ Projects</p>
+          <div class="category-hover">
+            <span>View All</span>
+          </div>
+        </div>
+        <div class="category-card">
+          <div class="category-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3>Mobile Apps</h3>
+          <p>15+ Projects</p>
+          <div class="category-hover">
+            <span>View All</span>
+          </div>
+        </div>
+        <div class="category-card">
+          <div class="category-icon">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <h3>Branding</h3>
+          <p>25+ Projects</p>
+          <div class="category-hover">
+            <span>View All</span>
+          </div>
+        </div>
+        <div class="category-card">
+          <div class="category-icon">
+            <i class="fas fa-camera"></i>
+          </div>
+          <h3>Photography</h3>
+          <p>10+ Projects</p>
+          <div class="category-hover">
+            <span>View All</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Stats -->
+    <div class="project-stats">
+      <div class="stat-cards">
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <div class="stat-info">
+            <h3>200+</h3>
+            <p>Projects Completed</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="stat-info">
+            <h3>150+</h3>
+            <p>Happy Clients</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <div class="stat-info">
+            <h3>25+</h3>
+            <p>Awards Won</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="project-cta">
+      <div class="cta-content">
+        <h2>Have a Project in Mind?</h2>
+        <p>Let's create something amazing together</p>
+        <button class="cta-button">Start a Project</button>
+      </div>
+      <div class="cta-decoration">
+        <div class="floating-shape shape1"></div>
+        <div class="floating-shape shape2"></div>
+        <div class="floating-shape shape3"></div>
+      </div>
+    </div>
+  </div>
+</section>

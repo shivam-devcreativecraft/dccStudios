@@ -1,0 +1,76 @@
+<section class="contact-section">
+  <div class="container">
+    <div class="contact-content">
+      <div class="contact-info">
+        <h1>Let's Start a Project Together</h1>
+        <p class="subtitle">Get in touch with us to start your next digital journey</p>
+        
+        <div class="info-items">
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <h3>Email Us</h3>
+            <p>devcreativecraft+studios&#64;gmail.com</p>
+          </div>
+          
+          <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <h3>Call Us</h3>
+            <p>+1 (555) 123-4567</p>
+          </div>
+          
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Visit Us</h3>
+            <p>123 Creative Street, Design City, DC 12345</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="contact-form">
+        <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+          <div class="form-group">
+            <input type="text" 
+                   name="name" 
+                   [(ngModel)]="formData.name" 
+                   placeholder="Your Name" 
+                   required>
+          </div>
+          
+          <div class="form-group">
+            <input type="email" 
+                   name="email" 
+                   [(ngModel)]="formData.email" 
+                   placeholder="Your Email" 
+                   required>
+          </div>
+          
+          <div class="form-group">
+            <select name="service" 
+                    [(ngModel)]="formData.service" 
+                    required>
+              <option value="">Select Service</option>
+              <option value="web-design">Web Design</option>
+              <option value="development">Development</option>
+              <option value="branding">Branding</option>
+              <option value="marketing">Marketing</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <textarea name="message" 
+                      [(ngModel)]="formData.message" 
+                      placeholder="Your Message" 
+                      rows="5" 
+                      required></textarea>
+          </div>
+          
+          <button type="submit" 
+                  [disabled]="!contactForm.form.valid" 
+                  class="submit-btn">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
